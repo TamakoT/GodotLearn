@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://u51b3gqd7vck"]
+
+[ext_resource type="Script" path="res://系统框架/场景切换系统/SceneChangeSystem.cs" id="1_skywd"]
+
+[node name="场景切换器" type="Node"]
+script = ExtResource("1_skywd")

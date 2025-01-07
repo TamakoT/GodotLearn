@@ -1,0 +1,25 @@
+[gd_scene load_steps=8 format=3 uid="uid://cv6syhng83ky7"]
+
+[ext_resource type="Script" path="res://系统框架/初始化/GameFirstInit.cs" id="1_x5ect"]
+[ext_resource type="PackedScene" uid="uid://bvo3s00bntifc" path="res://系统框架/信号管理系统/信号管理系统.tscn" id="2_pj3mo"]
+[ext_resource type="PackedScene" uid="uid://cjckxvofxfc20" path="res://系统框架/设置管理系统/设置管理系统.tscn" id="3_44p41"]
+[ext_resource type="PackedScene" uid="uid://beli6i8l8xqh7" path="res://系统框架/存档系统/存档管理系统.tscn" id="4_ypeg6"]
+[ext_resource type="PackedScene" uid="uid://pxpko0gn01yp" path="res://系统框架/输入管理系统/输入管理系统.tscn" id="5_e28gp"]
+[ext_resource type="PackedScene" uid="uid://br1x53bu0owul" path="res://系统框架/视口管理系统/视口管理系统.tscn" id="6_fpp5k"]
+[ext_resource type="PackedScene" uid="uid://u51b3gqd7vck" path="res://系统框架/场景切换系统/场景切换系统.tscn" id="7_08wpc"]
+
+[node name="系统初始化" type="Node"]
+process_mode = 3
+script = ExtResource("1_x5ect")
+
+[node name="信号管理器" parent="." instance=ExtResource("2_pj3mo")]
+
+[node name="设置管理器" parent="." instance=ExtResource("3_44p41")]
+
+[node name="存档管理器" parent="." instance=ExtResource("4_ypeg6")]
+
+[node name="输入管理器" parent="." instance=ExtResource("5_e28gp")]
+
+[node name="视口管理器" parent="." instance=ExtResource("6_fpp5k")]
+
+[node name="场景切换器" parent="." instance=ExtResource("7_08wpc")]

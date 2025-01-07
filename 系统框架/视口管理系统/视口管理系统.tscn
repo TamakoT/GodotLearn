@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://br1x53bu0owul"]
+
+[ext_resource type="Script" path="res://系统框架/视口管理系统/CanvasManageSystem.cs" id="1_0awqo"]
+
+[node name="视口管理器" type="Node"]
+script = ExtResource("1_0awqo")

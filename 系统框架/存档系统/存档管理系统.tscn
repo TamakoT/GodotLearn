@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://beli6i8l8xqh7"]
+
+[ext_resource type="Script" path="res://系统框架/存档系统/SaveDataManageSystem.cs" id="1_f4boa"]
+
+[node name="存档管理器" type="Node"]
+script = ExtResource("1_f4boa")

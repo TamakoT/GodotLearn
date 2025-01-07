@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjckxvofxfc20"]
+
+[ext_resource type="Script" path="res://系统框架/设置管理系统/SettingManageSystem.cs" id="1_jae6k"]
+
+[node name="设置管理器" type="Node"]
+script = ExtResource("1_jae6k")

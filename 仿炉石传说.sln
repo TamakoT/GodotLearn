@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "仿炉石传说", "仿炉石传说.csproj", "{D784A4A9-04BF-4328-9678-441D4CCBB919}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D784A4A9-04BF-4328-9678-441D4CCBB919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D784A4A9-04BF-4328-9678-441D4CCBB919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D784A4A9-04BF-4328-9678-441D4CCBB919}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{D784A4A9-04BF-4328-9678-441D4CCBB919}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{D784A4A9-04BF-4328-9678-441D4CCBB919}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{D784A4A9-04BF-4328-9678-441D4CCBB919}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

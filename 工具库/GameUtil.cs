@@ -1,3 +1,4 @@
+using System;
 using System.Runtime.CompilerServices;
 using Godot;
 using 仿炉石传说.系统框架.信号管理系统;
@@ -95,5 +96,25 @@ public static class GameUtil
     public static GameFirstInit.GameEnvType Env()
     {
         return GameUtil._instance.GameEnv;
+    }
+
+    /// <summary>
+    ///     创建定时器
+    /// </summary>
+    /// <param name="timeSec">时间（秒）</param>
+    /// <returns>定时器</returns>
+    public static SceneTreeTimer CreatTimer(double timeSec)
+    {
+        return GameUtil._instance.GetTree().CreateTimer(timeSec);
+    }
+
+    /// <summary>
+    ///     延迟一定时间后执行动作
+    /// </summary>
+    /// <param name="timeSec">时间（秒）</param>
+    /// <param name="action">动作</param>
+    public static void DelayAction(double timeSec, Action action)
+    {
+        GameUtil.CreatTimer(timeSec).Timeout += action;
     }
 }

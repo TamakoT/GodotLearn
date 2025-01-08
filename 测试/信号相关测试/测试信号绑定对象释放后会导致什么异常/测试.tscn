@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://xl8byt02fvqk"]
+
+[ext_resource type="Script" path="res://测试/信号相关测试/测试信号绑定对象释放后会导致什么异常/Test.cs" id="1_3282e"]
+[ext_resource type="PackedScene" uid="uid://cn5lvy1yvjbej" path="res://测试/信号相关测试/测试信号绑定对象释放后会导致什么异常/测试信号节点.tscn" id="2_bavvo"]
+
+[node name="测试" type="Node2D"]
+script = ExtResource("1_3282e")
+
+[node name="测试信号节点" parent="." instance=ExtResource("2_bavvo")]
+
+[node name="测试信号节点2" parent="." instance=ExtResource("2_bavvo")]
+
+[node name="测试信号节点3" parent="." instance=ExtResource("2_bavvo")]
+
+[node name="测试信号节点4" parent="." instance=ExtResource("2_bavvo")]

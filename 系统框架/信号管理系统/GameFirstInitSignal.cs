@@ -1,10 +1,8 @@
 using Godot;
-using 仿炉石传说.接口约定.信号;
 
 namespace 仿炉石传说.系统框架.信号管理系统;
 
-public partial class GameFirstInitSignal : Node
-    , ISafeSignalInterface
+public partial class GameFirstInitSignal : SignalBase
 {
     /// <summary>
     /// 游戏第一次初始化完成
@@ -12,18 +10,7 @@ public partial class GameFirstInitSignal : Node
     [Signal]
     public delegate void GameFirstInitFinishEventHandler();
 
-    private ISafeSignalInterface _signalInterfaceInstance;
-
-    public override void _Ready()
-    {
-        _signalInterfaceInstance = this;
-    }
-
-    /// <summary>
-    ///     获取所有信号名
-    /// </summary>
-    /// <returns>名称集合</returns>
-    public string[] GetAllSignalNames()
+    public override string[] GetAllSignalNames()
     {
         string[] names =
         {
@@ -46,7 +33,7 @@ public partial class GameFirstInitSignal : Node
 
     public void SafeEmitGameFirstInitFinish()
     {
-        _signalInterfaceInstance.SafeEmitSignal(this, nameof(GameFirstInitSignal.GameFirstInitFinish));
+        SafeEmitSignal(nameof(GameFirstInitSignal.GameFirstInitFinish));
     }
 
     public void EmitGameFirstInitFinish()

@@ -4,3 +4,4 @@
 
 [node name="开始" type="Node2D"]
 script = ExtResource("1_aaqec")
+DebugScenePath = "res://测试/信号相关测试/测试信号绑定对象释放后会导致什么异常/测试.tscn"

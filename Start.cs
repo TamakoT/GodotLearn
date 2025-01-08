@@ -1,8 +1,6 @@
-using System;
 using Godot;
 using 仿炉石传说.工具库;
 using 仿炉石传说.工具库.异常工具;
-using 仿炉石传说.系统框架.信号管理系统;
 using GameFirstInit = 仿炉石传说.系统框架.初始化.GameFirstInit;
 
 namespace 仿炉石传说;
@@ -29,7 +27,7 @@ public partial class Start : Node2D
 
     public override void _Ready()
     {
-        Ready += () =>
+        GameUtil.SignalManager.GameFirstInitSignals.ConnectGameFirstInitFinish(Callable.From(() =>
         {
             switch (GameUtil.Env())
             {
@@ -46,6 +44,6 @@ public partial class Start : Node2D
                     ExceptionUtil.PrintError("环境未配置，请先配置该环境");
                     break;
             }
-        };
+        }));
     }
 }

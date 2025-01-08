@@ -10,9 +10,11 @@ namespace 仿炉石传说.系统框架.信号管理系统;
 public partial class SignalManageSystem : Node
 {
     public GameFirstInitSignal GameFirstInitSignals;
+    public ForTestUseSignal    ForTestUseSignals;
 
     public override void _Ready()
     {
         GameFirstInitSignals = GetNode<GameFirstInitSignal>("系统初始化信号");
+        ForTestUseSignals    = GetNode<ForTestUseSignal>("测试专用信号");
     }
 }

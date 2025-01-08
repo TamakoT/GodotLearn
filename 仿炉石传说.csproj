@@ -14,4 +14,7 @@
     <ItemGroup>
         <PackageReference Include="Masuit.Tools.Core" Version="2024.7.4"/>
     </ItemGroup>
+    <ItemGroup>
+        <Folder Include="接口约定\信号\"/>
+    </ItemGroup>
 </Project>

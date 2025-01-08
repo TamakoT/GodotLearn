@@ -46,7 +46,11 @@ public partial class GameFirstInit : Node
 
         foreach (Node child in GetChildren()) GameUtil.SetInitComponent(child);
 
-        Ready += () => { _signalManager.GameFirstInitSignals.EmitGameFirstInitFinish(); };
+        Ready += async () =>
+        {
+            await ToSignal(GetTree().CreateTimer(2), SceneTreeTimer.SignalName.Timeout);
+            _signalManager.GameFirstInitSignals.EmitGameFirstInitFinish();
+        };
     }
 
     /// <summary>

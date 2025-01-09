@@ -1,22 +1,21 @@
 using Godot;
 
-namespace 仿炉石传说.系统框架.信号管理系统;
+namespace 仿炉石传说.系统框架.信号管理系统.系统初始化信号;
 
 public partial class GameFirstInitSignal : SignalBase
 {
     /// <summary>
-    /// 游戏第一次初始化完成
+    ///     游戏第一次初始化完成
     /// </summary>
     [Signal]
     public delegate void GameFirstInitFinishEventHandler();
 
     public override string[] GetAllSignalNames()
     {
-        string[] names =
-        {
-            nameof(GameFirstInitSignal.GameFirstInitFinish),
-        };
-        return names;
+        return
+        [
+            nameof(GameFirstInitSignal.GameFirstInitFinish)
+        ];
     }
 
     #region 信号 GameFirstInitFinish

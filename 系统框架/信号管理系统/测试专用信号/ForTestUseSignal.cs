@@ -1,6 +1,6 @@
 using Godot;
 
-namespace 仿炉石传说.系统框架.信号管理系统;
+namespace 仿炉石传说.系统框架.信号管理系统.测试专用信号;
 
 public partial class ForTestUseSignal : SignalBase
 {
@@ -12,11 +12,10 @@ public partial class ForTestUseSignal : SignalBase
 
     public override string[] GetAllSignalNames()
     {
-        string[] names =
-        {
+        return
+        [
             nameof(ForTestUseSignal.TestSignal)
-        };
-        return names;
+        ];
     }
 
     #region 信号 TestSignal

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc1rewsv204pg"]
+
+[ext_resource type="Script" path="res://系统框架/视口管理系统/场景切换覆盖层/SceneChangeCoverInterface.cs" id="1_rxjdt"]
+
+[node name="场景切换覆盖层" type="CanvasLayer"]
+script = ExtResource("1_rxjdt")

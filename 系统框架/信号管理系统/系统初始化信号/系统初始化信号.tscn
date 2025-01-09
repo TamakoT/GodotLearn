@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsffeerys8htg"]
+
+[ext_resource type="Script" path="res://系统框架/信号管理系统/系统初始化信号/GameFirstInitSignal.cs" id="1_bvt3h"]
+
+[node name="系统初始化信号" type="Node"]
+script = ExtResource("1_bvt3h")

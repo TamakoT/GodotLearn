@@ -41,7 +41,7 @@ public partial class Start : Node2D
                     GameUtil.SceneChanger.ChangeScene(DebugScenePath);
                     break;
                 default:
-                    ExceptionUtil.PrintError("环境未配置，请先配置该环境");
+                    ExceptionUtil.PrintError("环境未配置，请先配置环境");
                     break;
             }
         }));

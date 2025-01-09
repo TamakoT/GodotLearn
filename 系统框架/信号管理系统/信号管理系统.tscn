@@ -1,14 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://bvo3s00bntifc"]
 
 [ext_resource type="Script" path="res://系统框架/信号管理系统/SignalManageSystem.cs" id="1_80y85"]
-[ext_resource type="Script" path="res://系统框架/信号管理系统/GameFirstInitSignal.cs" id="2_g04ds"]
-[ext_resource type="Script" path="res://系统框架/信号管理系统/ForTestUseSignal.cs" id="3_e2mcl"]
+[ext_resource type="PackedScene" uid="uid://bsffeerys8htg" path="res://系统框架/信号管理系统/系统初始化信号/系统初始化信号.tscn" id="2_ojvte"]
+[ext_resource type="PackedScene" uid="uid://dl5ksd36dbtu8" path="res://系统框架/信号管理系统/测试专用信号/测试专用信号.tscn" id="3_dp06q"]
 
 [node name="信号管理器" type="Node"]
 script = ExtResource("1_80y85")
 
-[node name="系统初始化信号" type="Node" parent="."]
-script = ExtResource("2_g04ds")
+[node name="系统初始化信号" parent="." instance=ExtResource("2_ojvte")]
 
-[node name="测试专用信号" type="Node" parent="."]
-script = ExtResource("3_e2mcl")
+[node name="测试专用信号" parent="." instance=ExtResource("3_dp06q")]

@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbgevtqno2hgk"]
+
+[ext_resource type="Script" path="res://系统框架/视口管理系统/开始菜单界面/StartMenuInterface.cs" id="1_2mcmu"]
+
+[node name="开始菜单界面" type="CanvasLayer"]
+script = ExtResource("1_2mcmu")
+
+[node name="主界面" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="一级菜单界面" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

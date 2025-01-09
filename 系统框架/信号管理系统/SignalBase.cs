@@ -8,7 +8,7 @@ using Array = System.Array;
 namespace 仿炉石传说.系统框架.信号管理系统;
 
 [GlobalClass]
-public partial class SignalBase : Node
+public abstract partial class SignalBase : Node
 {
     /// <summary>
     ///     获取节点拥有的所有信号

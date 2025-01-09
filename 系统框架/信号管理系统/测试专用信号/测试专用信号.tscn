@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl5ksd36dbtu8"]
+
+[ext_resource type="Script" path="res://系统框架/信号管理系统/测试专用信号/ForTestUseSignal.cs" id="1_bb7i4"]
+
+[node name="测试专用信号" type="Node"]
+script = ExtResource("1_bb7i4")

@@ -1,7 +1,7 @@
 using Godot;
 using 仿炉石传说.工具库;
 using 仿炉石传说.系统框架.信号管理系统;
-using CanvasManageSystem = 仿炉石传说.系统框架.视口管理系统.CanvasManageSystem;
+using CanvasManageSystem = 仿炉石传说.系统框架.画布层管理系统.CanvasManageSystem;
 using InputManageSystem = 仿炉石传说.系统框架.输入管理系统.InputManageSystem;
 using SaveDataManageSystem = 仿炉石传说.系统框架.存档系统.SaveDataManageSystem;
 using SceneChangeSystem = 仿炉石传说.系统框架.场景切换系统.SceneChangeSystem;
@@ -41,7 +41,7 @@ public partial class GameFirstInit : Node
         _saveDataManager = GetNode<SaveDataManageSystem>("存档管理器");
         _signalManager   = GetNode<SignalManageSystem>("信号管理器");
         _inputManager    = GetNode<InputManageSystem>("输入管理器");
-        _canvasManager   = GetNode<CanvasManageSystem>("视口管理器");
+        _canvasManager   = GetNode<CanvasManageSystem>("画布层管理器");
         _sceneChanger    = GetNode<SceneChangeSystem>("场景切换器");
 
         foreach (Node child in GetChildren()) GameUtil.SetInitComponent(child);

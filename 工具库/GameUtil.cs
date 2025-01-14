@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using Godot;
 using 仿炉石传说.系统框架.信号管理系统;
 using GameFirstInit = 仿炉石传说.系统框架.初始化.GameFirstInit;
-using CanvasManageSystem = 仿炉石传说.系统框架.视口管理系统.CanvasManageSystem;
+using CanvasManageSystem = 仿炉石传说.系统框架.画布层管理系统.CanvasManageSystem;
 using InputManageSystem = 仿炉石传说.系统框架.输入管理系统.InputManageSystem;
 using SaveDataManageSystem = 仿炉石传说.系统框架.存档系统.SaveDataManageSystem;
 using SceneChangeSystem = 仿炉石传说.系统框架.场景切换系统.SceneChangeSystem;

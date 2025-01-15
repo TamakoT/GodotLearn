@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Godot;
 using 仿炉石传说.工具库.常量池;
-using 仿炉石传说.系统框架.视口管理系统;
 using SceneChangeCoverInterface = 仿炉石传说.系统框架.画布层管理系统.场景切换覆盖层.SceneChangeCoverInterface;
 using StartMenuInterface = 仿炉石传说.系统框架.画布层管理系统.开始菜单界面.StartMenuInterface;
 using UserInterface = 仿炉石传说.系统框架.画布层管理系统.用户界面.UserInterface;
